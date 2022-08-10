@@ -1,0 +1,7 @@
+6
+1,Final Fantasy 7,RPG,Square Soft,1997
+2,Resident Evil 2,Survival Horror,Capcom,1998
+3,Metal Gear Solid,Tatical Spionage,Konami,1998
+4,Street Fighter II - snes,Luta,Capcom,1992
+5,Alundra,RPG,Working Designs,1998
+6,MegaMan,Aventura/Ação,Capcom,1987

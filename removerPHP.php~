@@ -1,0 +1,32 @@
+#!/usr/bin/php
+
+<?php
+
+  $arquivo = fopen("testeJogos.txt","r+") or die("Nao foi possivel abrir o arquivo");
+  fseek($arquivo,2);
+  $posicao = 2;
+  $ponteiro = 0;
+  $id = "4";
+  while(!feof($arquivo)){
+
+     $linha = fgets($arquivo);
+     $jogo = str_getcsv($linha);
+     if(strcmp($id,$jogo[0]) === 0){
+	//$texto = " ";
+	//fseek($arquivo,$posicao);
+	//fwrite($arquivo,$texto);
+	$ponteiro = $posicao;
+	//fclose($arquivo);
+	//echo "Registro removido";
+     } else {
+	print_r($jogo);
+	$posicao += strlen($linha);
+     }
+  }
+  
+  fseek($arquivo,$ponteiro);
+  $registro = fgets($arquivo);
+  echo $registro;
+  fclose($arquivo);
+
+?>
